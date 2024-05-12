@@ -1,0 +1,117 @@
+[libraries]
+defaultlib.files = [
+    'src/uart_pkg.vhd',
+    'src/uart_rx.vhd',
+    'src/uart_tx.vhd',
+    'src/top.vhd',
+    'tests/tb_uart_rx.vhd',
+    'tests/tb_uart_tx.vhd',
+]
+
+vunit_lib.files = [
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/*.vhd',
+
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/logging/test/*.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/logging/src/*.vhd',
+
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/string_ops/test/*.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/string_ops/src/*.vhd',
+
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/core/src/core_pkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/core/src/stop_pkg.vhd',
+
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/array/test/*.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/array/src/*.vhd',
+
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/run/test/*.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/run/src/*.vhd',
+
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_checker.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check_next.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check_relation_2008p.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check_stable.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/test_support.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check_passed.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check_failed.vhd',
+    #/usr/lib/python3.11/python3.6/site-packages/vunit/vhdl/check/test/tb_deprecated.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check_implication.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check_sequence.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check_zero_one_hot.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check_equal_real.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check_one_hot.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_result.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check_not_unknown.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check_false.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check_relation.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/test/tb_check.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/check/src/*.vhd',
+
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/verification_components/test/*.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/verification_components/src/*.vhd',
+
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/random/test/*.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/random/src/*.vhd',
+
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/test/*.vhd',
+
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/codec.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/integer_array_pkg-body.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/queue_pkg-body.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/dict_pkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/queue_pkg-2008p.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/queue_pkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/integer_array_pkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/data_types_context.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/types.vhd',
+    #/usr/lib/python3.11/python3.6/site-packages/vunit/vhdl/data_types/src/external/*novhpi.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/data_types/src/byte_vector*.vhd',
+
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/path/test/*.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/path/src/*.vhd',
+
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/com/test/constants.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/com/test/more_constants.vhd',
+    #/usr/lib/python3.11/python3.6/site-packages/vunit/vhdl/com/test/tb_com_codec.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/com/test/custom_types.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/com/test/tb_com_msg_building.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/com/test/tb_com_deprecated.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/com/test/tb_com.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/com/src/*.vhd',
+
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/dictionary/test/*.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/dictionary/src/*.vhd',
+]
+
+
+osvvm.files = [
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/TbUtilPkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/OsvvmGlobalPkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/RandomBasePkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/VendorCovApiPkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/OsvvmContext.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/ScoreboardPkg_slv.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/NamePkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/RandomPkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/ScoreboardPkg_int.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/SortListPkg_int.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/MemoryPkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/AlertLogPkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/demo/AlertLog_Demo_Hierarchy.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/demo/AlertLog_Demo_Global.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/demo/Demo_Rand.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/TranscriptPkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/CoveragePkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/MessagePkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/ResolutionPkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/TextUtilPkg.vhd',
+    '/usr/lib/python3.11/site-packages/vunit/vhdl/osvvm/ScoreboardGenericPkg.vhd',
+]
