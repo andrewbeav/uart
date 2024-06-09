@@ -17,6 +17,7 @@ entity uart_tx is
         
         tx_data_in : in std_logic_vector(data_length-1 downto 0);
         n_request_tx : in std_logic;
+        tx_sent : out boolean := false;
 
         tx : out std_logic := '1'
     );
@@ -42,6 +43,7 @@ begin
                         tx <= '1';
                         if n_request_tx = '0' then
                             current_state <= START_BIT;
+                            tx_sent <= false;
                         end if;
 
                     when START_BIT =>
@@ -72,6 +74,7 @@ begin
                         if bit_counter >= clk_cycles_per_bit-1 then
                             bit_counter <= 0;
                             current_state <= IDLE;
+                            tx_sent <= true;
                         else
                             bit_counter <= bit_counter + 1;
                         end if;
